@@ -12,7 +12,7 @@ def build_filter_by(
     parts: list[str] = []
 
     if location:
-        parts.append(f"locations:=[`{location}`]")
+        parts.append(f"countries:=[`{location}`]")
     if experience:
         parts.append(f"experience_level:=[`{experience}`]")
     if category:

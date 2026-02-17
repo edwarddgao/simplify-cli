@@ -46,8 +46,8 @@ def search_jobs(
 
     search_params: dict[str, Any] = {
         "q": query,
-        "query_by": "title,company_name",
-        "sort_by": "updated_date:desc",
+        "query_by": "title,company_name,functions,locations",
+        "sort_by": "_text_match:desc,shuffle_key:asc,posting_id:desc",
         "page": page,
         "per_page": per_page,
     }
